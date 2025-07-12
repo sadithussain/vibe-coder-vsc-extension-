@@ -14,12 +14,12 @@
   "contributes": {
     "commands": [
       {
-        "command": "vibe-coder.helloWorld",
-        "title": "Hello World"
-      },
-      {
         "command": "vibe-coder.getSelectedText",
         "title": "Vibe Coder: Get Selected Text"
+      },
+      {
+        "command": "vibe-coder.openChat",
+        "title": "Vibe Coder: Open Chat"
       }
     ]
   },
