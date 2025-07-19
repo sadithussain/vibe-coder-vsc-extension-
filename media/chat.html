@@ -3,20 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="chat.css" rel="stylesheet" />
-    <title>Vibe Coder Chat</title>
+    <title>Vibe Coder</title>
+    <!-- Link to the new, simpler CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Vibe Coder</h1>
-    <div id="chat-container">
-      <p>Welcome! Ask me a question about your code.</p>
+    <div class="chat-container">
+      <!-- Header -->
+      <div class="chat-header">
+        <h3>Vibe Coder</h3>
+      </div>
+
+      <!-- Messages Area -->
+      <div id="chat-messages" class="chat-messages">
+        <!-- Example messages with simple classes -->
+      </div>
+
+      <!-- Input Area -->
+      <div class="chat-input-area">
+        <input type="text" id="chat-input" placeholder="Type your message..." />
+        <button id="send-button">Send</button>
+      </div>
     </div>
-    <textarea
-      id="prompt-input"
-      rows="3"
-      placeholder="Type your prompt here..."
-    ></textarea>
-    <button id="send-button">Send</button>
 
     <script src="main.js"></script>
   </body>

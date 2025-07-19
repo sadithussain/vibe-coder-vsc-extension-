@@ -1,8 +1,9 @@
 {
-  "name": "vibe-coder",
+  "name": "vibe-coder-sadit",
   "displayName": "Vibe Coder",
   "description": "Vibe code using your own API!",
   "version": "0.0.1",
+  "publisher": "sadithussain",
   "engines": {
     "vscode": "^1.54.0"
   },
@@ -14,14 +15,20 @@
   "contributes": {
     "commands": [
       {
-        "command": "vibe-coder.getSelectedText",
-        "title": "Vibe Coder: Get Selected Text"
-      },
-      {
         "command": "vibe-coder.openChat",
         "title": "Vibe Coder: Open Chat"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Vibe Coder",
+      "properties": {
+        "vibe-coder.geminiApiKey": {
+          "type": "string",
+          "default": "",
+          "description": "Your Gemini API Key."
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
@@ -32,14 +39,19 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.54.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
+    "@types/node-fetch": "^2.6.12",
+    "@types/vscode": "^1.54.0",
     "@typescript-eslint/eslint-plugin": "^8.31.1",
     "@typescript-eslint/parser": "^8.31.1",
-    "eslint": "^9.25.1",
-    "typescript": "^5.8.3",
     "@vscode/test-cli": "^0.0.11",
-    "@vscode/test-electron": "^2.5.2"
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sadithussain/vibe-coder-vsc-extension-"
   }
 }
